@@ -1,0 +1,39 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <p class="h4 text-danger">Employee Information</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi corporis exercitationem excepturi fugiat repudiandae dolores deserunt asperiores perferendis tempore culpa nostrum necessitatibus, consequuntur odio distinctio iure quasi nemo vitae commodi?</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table table-success table-striped table-hover text-center">
+                <thead class="bg-dark text-white">
+                    <tr>
+                      <th>Id</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Email</th>
+                      <th>Gender</th>
+                      <th>IP Address</th>
+                      <th>Country</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    <tr *ngFor="let employee of employees">
+                      <td>{{employee.id}}</td>
+                      <td>
+                          <a routerLink="/employees/{{employee.id}}" class="text-danger">{{employee.first_name}}</a>
+                        </td>
+                      <td>{{employee.last_name}}</td>
+                      <td>{{employee.email}}</td>
+                      <td>{{employee.gender}}</td>
+                      <td>{{employee.ip_address}}</td>
+                      <td>{{employee.country}}</td>
+                    </tr>
+                  </tbody>
+              </table>
+        </div>
+    </div>
+</div>

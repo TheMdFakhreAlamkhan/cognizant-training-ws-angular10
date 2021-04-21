@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.table tbody tr td{
+    font-weight: bold !important;
+}
+.landing-page{
+    background: white url("./assets/img/landing-page.jpg") no-repeat scroll center;
+    background-size: cover;
+    height: 100vh;
+}
+.wrapper{
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+}
